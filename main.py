@@ -114,6 +114,7 @@ def check():
         else:
             messagebox.showerror("error","Wrong answer. Try again.")
             
+f=Frame(root)
 f.configure(bg="grey",width=550,height=400)
 f.place(x=0,y=0)
 
@@ -136,8 +137,8 @@ ec=Label(f,text="Enter the correct value.")
 ec.configure(font=("sans-serif",18,"normal"))
 ec.place(x=146,y=170)
 
-
+l1=Entry(f)
 l1.configure(font=("sans-serif",26,"normal"),width=7)
 l1.place(x=11000,y=12000)
-#verify()
+verify()
 root.mainloop()
